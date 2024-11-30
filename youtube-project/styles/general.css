@@ -1,0 +1,15 @@
+p {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* font stack */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* to get rid of all the default margins */
+}
+body {
+    margin: 0;
+    padding-top: 80px;
+    height: 1000px;
+    padding-left: 90px;
+    padding-right: 25px;
+    background-color: rgb(248, 248, 248);
+}
