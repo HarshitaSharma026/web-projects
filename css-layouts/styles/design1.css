@@ -1,0 +1,244 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    margin-top: 20px;
+}
+body {
+    height: 2000px;
+    padding-bottom: 1000px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    /* gap: ; */
+}
+.logo {
+    flex: 2;
+    /* border: 1px solid black; */
+}
+.logo-img {
+    height: 100px;
+    flex: 4;
+}
+.links {
+    flex: 1;
+    display: flex;
+    /* border: 1px solid yellow; */
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+.section-top {
+    max-width: 200vw;
+    padding: 100px;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+}
+.subheading {
+    font-size: 1em;
+    margin-top: 25px;
+    text-align: center;
+}
+.options {
+    display: flex;
+    margin-top: 15px;
+}
+.options p {
+    margin-right: 10px;
+    font-size: small;
+}
+.buttons {
+    display: flex;
+    margin-top: 35px;
+}
+.demo, .buynow {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 7px 20px 7px 20px;
+}
+.heading {
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+hr {
+    margin-top: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+@media (min-width: 1027px) {
+    .subheading {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+.category-buttons  {
+    display: flex;
+    flex-wrap: wrap;
+}
+.all, .alone{
+    border: none;
+    background-color: rgb(232, 232, 232);
+    padding: 7px 20px 7px 20px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.alone {
+    background-color: burlywood;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+}
+.all:active {
+    background-color: burlywood;
+}
+
+/* css for grid layout */
+.grid-container {
+    padding: 50px;
+    display: grid;
+    /* width: 90%; */
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 300px);
+    /* border: 1px solid green; */
+    gap: 30px;
+    justify-content: center;
+}
+.card {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.0.8);
+    padding: 2em;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+@media (max-width: 380px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+}
+
+/* css code for info bar */
+.info-bar {
+    display: flex;
+    padding: 30px;
+    background-color: burlywood;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info h3 {
+    font-size: 2em;
+    color: white;
+}
+.info p {
+    color: white;  
+}
+.rtl {
+    border: none;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    color: burlywood;
+
+}
+.another-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.another-heading h2 {
+    margin-top: 50px;
+}
+.another-heading p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* css for grid 2 */
+.grid2 {
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    padding-top: 30px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.grid-items {
+    padding: 2em;
+    border: 1px solid lightgray;
+    width: 200px;
+    text-align: center;
+    color: gray;
+}
+.grid-items:hover {
+    background-color: burlywood;
+    color: white;
+    cursor: pointer;
+}
+
+/* css for grid 3 */
+.grid3 {
+    margin-top: 60px;
+    display: grid;
+    width: 100%;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+.stats-odd {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    color: lightgray;
+}
+.stats-even {
+    background-color: rgb(201, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+.stats-even h2, .stats-odd h2 {
+    margin-top: 0;
+}
+
+/* css for final listing grid */
+.listing-grid {
+    margin-top: 40px;
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 300px;
+
+}
+ul {
+    /* border: 1px solid salmon; */
+}
+li {
+    font-size: 16px;
+}

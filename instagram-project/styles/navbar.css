@@ -1,0 +1,64 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-right: 2em;
+    left: 0;
+    border-right: 1px solid lightgray;
+}
+.sidebar-insta-logo {
+    width: 9vw;
+    padding-left: 28px;
+    padding-top: 28px;
+}
+
+.sidebar-links, .lower-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.icon-link {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.15s, margin-right 0.15s, border-radius 0.15s;
+    /* border: 1px solid gray; */
+    padding-right: 2em;
+}
+.icon-link:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icons {
+    width: 24px;
+    margin-left: 5px;
+}
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.text {
+    font-weight: 400;
+    padding-left: 14px;
+    align-self: flex-end;
+}
+
+.lower-sidebar {
+    border: 1px solid green;
+    position: absolute;
+    bottom: 0;
+}
+
+/* PROBLEM - lower side bar */
+@media (max-height: 1600) {
+    #threads {
+        opacity: 1;
+    }
+    .lower-sidebar {
+        position: relative;
+    }
+}

@@ -1,0 +1,119 @@
+.post-container {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: auto; */
+}
+
+.post {
+    margin-top: 2em;
+    /* border: 1px solid olivedrab; */
+    align-items: center;
+    width: 28.5vw;
+}
+
+.post-top-part {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.post-heading {
+    display: flex;
+}
+
+.profile-picture {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+}
+
+.account-name {
+    padding-left: 0.5em;
+}
+
+.account-name span {
+    color: gray;
+}
+
+.threedots {
+    width: 45px;
+    height: 44px;
+    align-self: self-end;
+}
+
+.post-picture {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* lower part of post */
+.left-icons {
+    text-align: left;
+}
+
+.reactions {
+    padding-right: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactions i {
+    font-size: 1.3em;
+    margin-left: 0.5em;
+}
+.reactions i:hover{
+    color: gray;
+    cursor:pointer;
+}
+
+.likes {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.like-profiles {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.likes p {
+    font-size: 0.8em;
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+
+.view-comments {
+    margin-left: 0.5em;
+    font-size: 0.85em;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.view-comments:hover {
+    cursor: pointer;
+}
+
+.add-comment {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+.comment-box {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 98%;
+    padding-bottom: 1em;
+}
+.comment-box:active {
+    border: none;
+}

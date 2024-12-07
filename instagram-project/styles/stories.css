@@ -1,0 +1,30 @@
+.story-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 2em;
+}
+.story {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellowgreen; */
+    align-items: center;
+}
+.outer {
+    background: linear-gradient(to left bottom, deeppink,magenta, orange,yellow);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+.story-picture {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2.5px;
+}
+.username {
+    margin-top: 10px;
+    font-size: small;
+    text-wrap: wrap;
+} 
